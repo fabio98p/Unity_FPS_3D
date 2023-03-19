@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -28,6 +29,8 @@ public class InputManager : MonoBehaviour
     {
         //tell the playernmotor to move using the value from our movment action
         motor.ProcessMove(onFoot.Movment.ReadValue<Vector2>());
+        motor.Sprint(onFoot.Sprint.ReadValue<float>() > 0.5f);
+        motor.Crouch(onFoot.Crouch.ReadValue<float>() > 0.5f);
     }
     private void LateUpdate()
     {

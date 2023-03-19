@@ -1336,7 +1336,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dca6d652616dc5042bb7ecaca6671876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSprint: 0
+  player: {fileID: 1485814855}
+  isCrouch: 0
   speed: 5
+  speedSprint: 10
   gravity: -9.8
   jumpHeight: 1
 --- !u!114 &1485814857
@@ -1407,6 +1411,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92ec2fd596c7b0d4187544815b7583f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1485814878
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485814855}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 091ef5840a4352e4aa4f09b190c81801, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1733586861 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2005428307193256956, guid: 3e609552297a0f64c8233e76519c161d, type: 3}
@@ -1943,6 +1968,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7867438417972519174, guid: 0f980f1788f89384d890c365a0c23734, type: 3}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7867438417972519174, guid: 0f980f1788f89384d890c365a0c23734, type: 3}
+      propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7867438417972519174, guid: 0f980f1788f89384d890c365a0c23734, type: 3}
